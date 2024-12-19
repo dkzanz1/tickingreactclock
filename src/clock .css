@@ -1,0 +1,72 @@
+/* Clock.css */
+
+.clock-container {
+    width: 200px;
+    height: 200px;
+    position: absolute; /* For centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center perfectly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock-face {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid red; /* Red clock face */
+    position: relative;
+  }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    background-color: black;
+  }
+  
+  .hour-hand {
+    width: 4px;
+    height: 40%;
+    background-color: darkred;
+  }
+  
+  .minute-hand {
+    width: 3px;
+    height: 45%;
+  }
+  
+  .second-hand {
+    width: 1px;
+    height: 48%;
+    background-color: red;
+  }
+  
+  .center-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .digital-time {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Styles for the App container to ensure full viewport height */
+  .App {
+      min-height: 100vh; /* Ensure full viewport height */
+      display: flex;
+      justify-content: center; /* Horizontally center content */
+      align-items: center; /* Vertically center content */
+      background-color: #f0f0f0; /* Optional background color */
+  }
